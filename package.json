@@ -1,0 +1,32 @@
+{
+  "name": "cassidyiscoding",
+  "version": "1.0.0",
+  "description": "My personal portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production",
+    "server": "npm run start --prefix server",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cassidyrose56/CassidyIsCoding.git"
+  },
+  "keywords": [
+    "portfolio",
+    "personal",
+    "web",
+    "app"
+  ],
+  "author": "Cassidy Johnson cassidyiscoding@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cassidyrose56/CassidyIsCoding/issues"
+  },
+  "homepage": "https://github.com/cassidyrose56/CassidyIsCoding#readme",
+  "devDependencies": {
+    "concurrently": "^7.5.0"
+  }
+}

@@ -1,0 +1,102 @@
+$white: #FCFAFA;
+$green: #1EA896;
+$orange: #FE5D26;
+$pink: #CA0EB7;
+$black: #180C2C;
+$title-text: 'Abril Fatface', cursive;
+$body-text: 'Poppins', sans-serif;
+
+
+#home-body {
+    height: 90vh;
+    background-color: $pink;
+    display: grid;
+    grid-template-rows: 12% 88%;
+}
+
+
+
+#navbar {
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 30% auto 25%;
+    grid-template-rows: 40% 60%;
+    align-items: end;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#logo-text {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin: 0;
+    font-weight: 400;
+}
+
+#nav-links {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#hero {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+}
+
+#home-left {
+    height: 100%;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-text {
+    color: $white;
+    font-family: $title-text;
+}
+
+.body-text {
+    color: $white;
+    font-family: $body-text;
+
+}
+
+#home-text {
+    width: 52vw;
+}
+
+#hello {
+    margin: 0;
+    font-size: 6rem;
+    color: rgba($white, .9);
+    letter-spacing: 0.3rem;
+}
+
+#describe {
+    font-family: $body-text;
+    font-size: 2.5rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 1650px) {
+    #describe {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    #describe {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    #hello {
+        font-size: 5rem;
+    }
+}
