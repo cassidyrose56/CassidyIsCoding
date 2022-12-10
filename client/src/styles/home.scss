@@ -1,10 +1,4 @@
-$white: #FCFAFA;
-$green: #1EA896;
-$orange: #FE5D26;
-$pink: #CA0EB7;
-$black: #180C2C;
-$title-text: 'Abril Fatface', cursive;
-$body-text: 'Poppins', sans-serif;
+@import './variables.scss';
 
 
 #home-body {
@@ -81,6 +75,18 @@ $body-text: 'Poppins', sans-serif;
     font-family: $body-text;
     font-size: 2.5rem;
     width: 100%;
+}
+
+#home-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#headshot {
+    height: 350px;
+    width: auto;
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 1650px) {

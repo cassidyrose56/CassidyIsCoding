@@ -1,14 +1,8 @@
-$white: #FCFAFA;
-$green: #1EA896;
-$orange: #FE5D26;
-$pink: #CA0EB7;
-$black: #180C2C;
-$title-text: 'Abril Fatface', cursive;
-$body-text: 'Poppins', sans-serif;
+@import './variables.scss';
 
 #info-body {
     height: 100vh;
-    background-color: $green;
+    background-color: $white;
     display: flex;
 }
 
