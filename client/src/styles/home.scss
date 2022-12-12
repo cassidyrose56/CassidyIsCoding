@@ -2,13 +2,11 @@
 
 
 #home-body {
-    height: 90vh;
+    height: 100vh;
     background-color: $pink;
     display: grid;
     grid-template-rows: 12% 88%;
 }
-
-
 
 #navbar {
     grid-row: 1 / 2;
