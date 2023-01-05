@@ -2,21 +2,21 @@ import React from 'react';
 import '../styles/personal-info.scss';
 import { motion } from 'framer-motion';
 
-const html = require('../../../assets/html.png');
-const css = require('../../../assets/css.png');
-const sass = require('../../../assets/sass.png');
-const react = require('../../../assets/react.png');
-const reactRouter = require('../../../assets/react-router.png');
-const mongoDB = require('../../../assets/mongodb.svg');
-const postgres = require('../../../assets/postgres.png');
-const graphQL = require('../../../assets/GraphQL.png');
-const express = require('../../../assets/express.png');
-const node = require('../../../assets/node.png');
-const git = require('../../../assets/git.png');
-const github = require('../../../assets/github.png');
-const webpack = require('../../../assets/webpack.png');
-const aws = require('../../../assets/aws.png');
-const typescript = require('../../../assets/typescript.svg');
+const html = require('../../../assets/techStack/html.png');
+const css = require('../../../assets/techStack/css.png');
+const sass = require('../../../assets/techStack/sass.png');
+const react = require('../../../assets/techStack/react.png');
+const reactRouter = require('../../../assets/techStack/react-router.png');
+const mongoDB = require('../../../assets/techStack/mongodb.svg');
+const postgres = require('../../../assets/techStack/postgres.png');
+const graphQL = require('../../../assets/techStack/GraphQL.png');
+const express = require('../../../assets/techStack/express.png');
+const node = require('../../../assets/techStack/node.png');
+const git = require('../../../assets/techStack/git.png');
+const github = require('../../../assets/techStack/github.png');
+const webpack = require('../../../assets/techStack/webpack.png');
+const aws = require('../../../assets/techStack/aws.png');
+const typescript = require('../../../assets/techStack/typescript.svg');
 
 const PersonalInfo = () => {
     return (

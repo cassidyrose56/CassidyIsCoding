@@ -1,0 +1,64 @@
+@import './variables.scss';
+
+#contact-layout {
+    height: 40vh;
+    background-color: $orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#contact-title {
+    margin: 0;
+    // margin-top: 20px;
+    font-family: $title-text;
+    color: $white;
+    font-size: 3.5rem;
+    letter-spacing: 0.15rem;
+}
+
+#contact-text {
+    font-family: $body-text;
+    color: white;
+    margin: 0 15% 0 15%;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.callEmailLink {
+    color: lighten($green, 47);
+    font-weight: 700;
+}
+
+#social-media-text {
+    font-family: $body-text;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+#sm-section {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#sm-link-section {
+    display: flex;
+    width: 15vw;
+    justify-content: space-around;
+}
+
+.sm-link {
+    color: white;
+    background-color: $green;
+    border-radius: 20px;
+    text-decoration: none;
+    width: 40%;
+    text-align: center;
+    font-weight: 400;
+    font-family: $body-text;
+}
