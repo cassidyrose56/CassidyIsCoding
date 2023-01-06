@@ -3,10 +3,10 @@ import '../styles/resume.scss';
 import ResumeComp from './ResumeComp';
 import { motion } from 'framer-motion';
 
-const lightQL = require('../../../assets/nobgResumeLogos/lightQL.png');
+const lightQL = require('../../../assets/nobgResumeLogos/LightQL.png');
 const internHouse = require('../../../assets/nobgResumeLogos/Intern.House.png');
 const kvasir = require('../../../assets/nobgResumeLogos/kvasir-coffee.png');
-const carryOn = require('../../../assets/nobgResumeLogos/carryOn.png');
+const carryOn = require('../../../assets/nobgResumeLogos/carryON.png');
 
 const Resume = () => {
 

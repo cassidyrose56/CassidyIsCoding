@@ -2,10 +2,10 @@ import React, {useState} from 'react';
 import '../styles/resume.scss';
 import { motion } from 'framer-motion';
 
-const lightQL = require('../../../assets/nobgResumeLogos/lightQL.png');
-const internHouse = require('../../../assets/nobgResumeLogos/Intern.House.png');
-const kvasir = require('../../../assets/nobgResumeLogos/kvasir-coffee.png');
-const carryOn = require('../../../assets/nobgResumeLogos/carryOn.png');
+// const lightQL = require('../../../assets/nobgResumeLogos/lightQL.png');
+// const internHouse = require('../../../assets/nobgResumeLogos/Intern.House.png');
+// const kvasir = require('../../../assets/nobgResumeLogos/kvasir-coffee.png');
+// const carryOn = require('../../../assets/nobgResumeLogos/carryOn.png');
 
 const ResumeComp = (props) => {
 

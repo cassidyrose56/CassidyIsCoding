@@ -24,7 +24,7 @@ const aws = require('../../../assets/techStack/aws.png');
 const typescript = require('../../../assets/techStack/typescript.svg');
 
 const lightQL = require('../../../assets/lightql.png');
-const internHouse = require('../../../assets/intern.house.png');
+const internHouse = require('../../../assets/Intern.House.png');
 
 const PersonalInfo = () => {
 
