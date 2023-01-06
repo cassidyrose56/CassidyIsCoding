@@ -16,7 +16,7 @@ const Home = () => {
     return (
         <div>
             <section id='home-body'>
-                <header id='navbar' className='body-text'>
+                {/* <header id='navbar' className='body-text'>
                     <img id='navbar-text' src={name}></img>
                     <nav id='nav-links' className='text'>
                         <motion.a
@@ -35,7 +35,7 @@ const Home = () => {
                             whileInView={{ opacity: 1 }}  
                         >Contact</motion.a>
                     </nav>
-                </header>
+                </header> */}
                 <section id='hero'>
                     <section id='home-left'>
                         <motion.div 

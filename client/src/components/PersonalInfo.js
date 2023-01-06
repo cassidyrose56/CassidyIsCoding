@@ -72,8 +72,8 @@ const PersonalInfo = () => {
                     visibleSlides={1}
                     totalSlides={2}
                     step={1}
-                    naturalSlideWidth={50}
-                    naturalSlideHeight={50}  
+                    naturalSlideWidth={300}
+                    naturalSlideHeight={500}  
                     isIntrinsicHeight  
                     infinite
                     hasMasterSpinner
@@ -90,8 +90,9 @@ const PersonalInfo = () => {
                         <ButtonBack onClick={handlePrevious} className='slider-btns' style={{left: 0}}>Back</ButtonBack>
                         <ButtonNext onClick={handleNext} className='slider-btns' style={{right: 0}}>Next</ButtonNext> 
                     </div>
+                   <a id='proj-name' href={link} target="_blank">{projName}</a> 
                 </CarouselProvider>
-                <a id='proj-name' href={link} target="_blank">{projName}</a>
+                
             </section>
             <section id='info-bottom'>
                 <h2 id='tech-title' className='titles'>

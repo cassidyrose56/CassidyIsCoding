@@ -1,11 +1,15 @@
 @import './variables.scss';
 
+#navbar-layout {
+    background-color: $pink;
+    height: 12vh;
+}
 
 #home-body {
-    height: 100vh;
+    height: 88vh;
     background-color: $pink;
-    display: grid;
-    grid-template-rows: 12% 88%;
+    display: flex;
+    align-items: center;
 }
 
 #navbar {
@@ -20,7 +24,7 @@
 #navbar-text {
     grid-column: 1 / 2;
     margin: 0;
-    height: 50%
+    height: 60%
 }
 
 #nav-links {
@@ -29,6 +33,7 @@
     justify-content: space-between;
     font-size: 1.3rem;
     margin-bottom: 3%;
+    cursor: pointer;
 }
 
 
@@ -67,13 +72,14 @@
     font-size: 6rem;
     color: rgba($white, .9);
     letter-spacing: 0.3rem;
-    margin-top: 14%;
+    // margin-top: 14%;
 }
 
 #describe {
     font-family: $body-text;
     font-size: 2.5rem;
     width: 100%;
+    // margin-bottom: 7%;
 }
 
 #home-right {
@@ -84,11 +90,11 @@
 
 
 #headshot {
-    height: 50vh;
+    height: 56vh;
     width: auto;
     border-radius: 50%;
     margin-right: 15%;
-    margin-bottom: 5%;
+    // margin-bottom: 5%;
 }
 
 .absGraphics {

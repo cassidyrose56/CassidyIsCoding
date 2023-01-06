@@ -45,7 +45,7 @@ const Resume = () => {
         {
             pic: carryOn,
             proj: 'CarryOn',
-            desc: 'A tool for making detailed packing lists based on the location and weather',
+            desc: 'A tool to make detailed packing lists based on  location and weather',
             info: ['Constructed a Node.js/Express server to create a RESTful API with modularized middleware and async database connection that allow for user authentication, communication between frontend and NoSQL database, and interaction with OpenWeather API',
             'Used React to create functional components to cut down on page reloads and improve data management across the application',
             'Implemented CSS modules with Sass to generate locally scoped class names, avoiding class name collision in global scope and maintaining scalability of CSS code while working to match the rendered page to mockups']
