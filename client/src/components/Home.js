@@ -22,13 +22,13 @@ const Home = () => {
                         <motion.a
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }} 
-                            whileInView={{ opacity: 1 }}   
+                            whileInView={{ opacity: 1 }}
                         >Personal Info</motion.a>
                         <motion.a
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }} 
                             whileInView={{ opacity: 1 }}  
-                        >Portfolio</motion.a>
+                        >Resume</motion.a>
                         <motion.a
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }} 

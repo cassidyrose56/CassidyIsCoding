@@ -13,9 +13,9 @@ const Contact = () => {
                 id='contact-title'>
                     Don't be a stranger!
             </motion.h1>
-            <p id='contact-text'>Thanks for stopping by! I'm currently looking to join a new team of developers. If you think we might be a good fit for one another, give me a <a href="tel:6825586522" className='callEmailLink'><b>call</b></a> or send me an <a href="mailto:cassidyrose56@gmail.com" className='callEmailLink'><b>email</b></a>.</p>
+            <p id='contact-text'>Thanks for stopping by! I'm currently looking to join a new team of developers. If you think we might be a good fit for one another, please don't hesitate to give me a <a href="tel:6825586522" className='callEmailLink'><b>call</b></a> or send me an <a href="mailto:cassidyrose56@gmail.com" className='callEmailLink'><b>email</b></a>.</p>
             <section id='sm-section'>
-                <p id='social-media-text'>Also, connect with me online!</p>
+                <p id='social-media-text'>Connect with me online!</p>
                 <section id='sm-link-section'>
                     <motion.a whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }} 

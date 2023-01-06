@@ -1,6 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../styles/personal-info.scss';
 import { motion } from 'framer-motion';
+import { ButtonBack, ButtonFirst, ButtonLast, ButtonNext,
+    CarouselProvider, DotGroup, Image, Slide, Slider, } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 
 const html = require('../../../assets/techStack/html.png');
 const css = require('../../../assets/techStack/css.png');
@@ -18,13 +23,75 @@ const webpack = require('../../../assets/techStack/webpack.png');
 const aws = require('../../../assets/techStack/aws.png');
 const typescript = require('../../../assets/techStack/typescript.svg');
 
+const lightQL = require('../../../assets/lightql.png');
+const internHouse = require('../../../assets/intern.house.png');
+
 const PersonalInfo = () => {
+
+    const [index, setIndex] = useState(0); 
+    const [projName, setProjName] = useState('LightQL');
+    const [link, setLink] = useState('lightql.com');
+    const length = 2;
+
+    const handlePrevious = () => {
+        const newIndex = index - 1;
+        if (newIndex === 1) {
+            setProjName('Intern.House');
+            setLink('https://www.intern.house/');
+            setLink('lightql.com');
+        } else {
+            setProjName('LightQL');
+        }
+        setIndex(newIndex < 0 ? length - 1 : newIndex);
+    };
+
+    const handleNext = () => {
+        const newIndex = index + 1;
+        if (newIndex === 1) {
+            setProjName('Intern.House')
+            setLink('https://www.intern.house/')
+        } else {
+            setProjName('LightQL');
+            setLink('lightql.com');
+        }
+        setIndex(newIndex >= length ? 0 : newIndex);
+    };
+
     return (
         <div id='info-body'>
+            <h1 id='info-title'>It's great to meet you!</h1>
             <section id='info-left'>
                 <h2 id='work-info'>
 
                 </h2>
+            </section>
+            <section id='info-right'>
+                <h2 id='project-title'>Projects</h2>
+                <CarouselProvider
+                    id='carousel'
+                    visibleSlides={1}
+                    totalSlides={2}
+                    step={1}
+                    naturalSlideWidth={50}
+                    naturalSlideHeight={50}  
+                    isIntrinsicHeight  
+                    infinite
+                    hasMasterSpinner
+                >
+                    <div style={{position:'relative'}}>
+                        <Slider>
+                            <Slide index={0}>
+                                <Image src={lightQL} style={{height:'200px', width:'auto', borderRadius: '50%'}} />
+                            </Slide>
+                            <Slide index={1}>
+                                <Image src={internHouse} style={{height:'200px', width:'auto', borderRadius: '50%'}} />
+                            </Slide>
+                        </Slider>
+                        <ButtonBack onClick={handlePrevious} className='slider-btns' style={{left: 0}}>Back</ButtonBack>
+                        <ButtonNext onClick={handleNext} className='slider-btns' style={{right: 0}}>Next</ButtonNext> 
+                    </div>
+                </CarouselProvider>
+                <a id='proj-name' href={link} target="_blank">{projName}</a>
             </section>
             <section id='info-bottom'>
                 <h2 id='tech-title' className='titles'>

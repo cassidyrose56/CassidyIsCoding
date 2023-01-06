@@ -1,0 +1,21 @@
+@import './variables.scss';
+
+@keyframes backgroundColorPalette {
+    0% {
+      background: $pink;
+    }
+    50% {
+      background: $green;
+    }
+    100% {
+      background: $pink;
+    }
+  }
+
+  #footer-layout {
+    height: 10vh;
+    animation-name: backgroundColorPalette;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    // animation-direction: alternate;
+  }
