@@ -4,15 +4,14 @@
     height: 100vh;
     background-color: $green;
     display: grid;
-    grid-template-columns: 50vw 50vw;
+    grid-template-columns: 60vw 40vw;
     grid-template-rows: 15vh 50vh 35vh;
 }
 
 .titles {
     font-family: $body-text;
     color: $white;
-    font-size: 2rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.05rem;
     margin: 0;
 }
 
@@ -31,8 +30,18 @@
 }
 
 #info-left {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    margin: 10%;
+    margin-top: 6%;
+    margin-right: 0;
+    font-size: 1.5rem;
+}
+
+#work-info {
+    color: $white;
+    font-family: $body-text;
+    text-align: justify;
 }
 
 #info-right {
@@ -42,11 +51,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-#project-title {
-    font-family: $body-text;
-    color: $white;
 }
 
 #carousel {

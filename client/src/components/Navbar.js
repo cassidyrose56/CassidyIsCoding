@@ -19,6 +19,7 @@ const Navbar = () => {
                             duration={500}
                         >
                             <motion.p 
+                                className='p-text'
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.9 }} 
                                 whileInView={{ opacity: 1 }}
@@ -34,6 +35,7 @@ const Navbar = () => {
                             duration={500}
                         >
                             <motion.p 
+                                className='p-text'
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.9 }} 
                                 whileInView={{ opacity: 1 }}
@@ -49,6 +51,7 @@ const Navbar = () => {
                             duration={500}
                         >
                             <motion.p 
+                                className='p-text'
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.9 }} 
                                 whileInView={{ opacity: 1 }}

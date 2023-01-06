@@ -18,7 +18,7 @@
     grid-template-columns: 30% auto 36%;
     align-items: end;
     margin-left: 92px;
-    margin-right: 100px;
+    margin-right: 8%;
 }
 
 #navbar-text {
@@ -32,8 +32,12 @@
     display: flex;
     justify-content: space-between;
     font-size: 1.3rem;
-    margin-bottom: 3%;
+    margin-bottom: 1%;
     cursor: pointer;
+}
+
+.p-text {
+    margin: 0;
 }
 
 

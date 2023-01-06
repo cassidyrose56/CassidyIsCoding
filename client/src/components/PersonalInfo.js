@@ -38,9 +38,10 @@ const PersonalInfo = () => {
         if (newIndex === 1) {
             setProjName('Intern.House');
             setLink('https://www.intern.house/');
-            setLink('lightql.com');
+            
         } else {
             setProjName('LightQL');
+            setLink('https://www.lightql.com/');
         }
         setIndex(newIndex < 0 ? length - 1 : newIndex);
     };
@@ -52,7 +53,7 @@ const PersonalInfo = () => {
             setLink('https://www.intern.house/')
         } else {
             setProjName('LightQL');
-            setLink('lightql.com');
+            setLink('https://www.lightql.com/');
         }
         setIndex(newIndex >= length ? 0 : newIndex);
     };
@@ -62,11 +63,11 @@ const PersonalInfo = () => {
             <h1 id='info-title'>It's great to meet you!</h1>
             <section id='info-left'>
                 <h2 id='work-info'>
-
+                    I'm passionate about creating inspiring and human-centric applications. 
                 </h2>
             </section>
             <section id='info-right'>
-                <h2 id='project-title'>Projects</h2>
+                <h2 id='project-title' className='titles'>Projects</h2>
                 <CarouselProvider
                     id='carousel'
                     visibleSlides={1}
