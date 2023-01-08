@@ -1,11 +1,9 @@
 import React, {useState} from 'react';
 import '../styles/personal-info.scss';
 import { motion } from 'framer-motion';
-import { ButtonBack, ButtonFirst, ButtonLast, ButtonNext,
+import { ButtonBack, ButtonNext,
     CarouselProvider, DotGroup, Image, Slide, Slider, } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 
 const html = require('../../../assets/techStack/html.png');
 const css = require('../../../assets/techStack/css.png');
