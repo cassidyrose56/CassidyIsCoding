@@ -4,8 +4,8 @@
     height: 100vh;
     background-color: $green;
     display: grid;
-    grid-template-columns: 60vw 40vw;
-    grid-template-rows: 15vh 50vh 35vh;
+    grid-template-columns: 55vw 45vw;
+    grid-template-rows: 15vh 57vh 28vh;
 }
 
 .titles {
@@ -22,9 +22,10 @@
     justify-content: center;
     align-items: center;
     margin: 0;
+    margin-top: 4%;
     font-family: $title-text;
     color: $white;
-    font-size: 3.5rem;
+    font-size: 4rem;
     letter-spacing: 0.15rem;
     
 }
@@ -32,21 +33,32 @@
 #info-left {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
-    margin: 10%;
-    margin-top: 6%;
+    margin: 5% 15%;
     margin-right: 0;
-    font-size: 1.5rem;
 }
 
 #work-info {
     color: $white;
     font-family: $body-text;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    text-align: justify;
+}
+
+#work-details {
+    color: $white;
+    font-family: $body-text;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    font-weight: 400;
     text-align: justify;
 }
 
 #info-right {
     grid-column: 2 / 3;
     grid-row: 2 / 3; 
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,30 +66,44 @@
 }
 
 #carousel {
-    width: auto;
-    background-color: rgba($white, 0.25);
+    width: 65%;
+    text-align: center;
     border-radius: 20px;
-
 }
 
 .slider-btns {
     position: absolute; 
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
     transform: translateY(-50%);
     top: 50%;
-    background-color: $white;
+    color: $white;
     border: none;
     border-radius: 50%;
     display: block;
-    padding: 16px 10px 16px 10px; 
+}
+
+.carousel-image {
+    border-radius: 40px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 #proj-name {
     font-family: $body-text;
     background-color: $white;
-    color: $pink;
+    color: $green;
     text-decoration: none;
-    border-radius: 20px;
-    padding: 5px 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    border-radius: 40px;
+    padding: 10px 15px;
 }
 
 #info-bottom {

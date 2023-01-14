@@ -21,7 +21,7 @@ const ScrollButton = () =>{
 
     return (
         <div id='scrollBtn'
-            style={{display: visible ? 'inline' : 'none'}}
+            style={{opacity: visible ? 1 : 0, transform: visible ? 'translateY(0)' : 'translateY(100px)'}}
         >
             <Link
                 activeClass="active"
@@ -31,7 +31,7 @@ const ScrollButton = () =>{
                 duration={500}
                 
             >
-                    Scroll to top
+                    <i class="bi bi-caret-up" style={{fontSize: '2rem', marginBottom: '5px'}}></i>
             </Link>
         </div>
         

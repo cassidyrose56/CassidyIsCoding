@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 
 const ResumeComp = (props) => {
 
+    const link = '';
+
     const infoSection = props.info.map((str) => 
         // console.log(el);
             <li key={str}>{str}</li>
@@ -14,7 +16,7 @@ const ResumeComp = (props) => {
         <div id='resume-comp-layout'>
             <section id='title-and-pic'>
                 <div id='img-box'>
-                    <img id='resume-pics' src={props.pic}></img>
+                    <a></a><img id='resume-pics' src={props.pic}></img>
                 </div>
                 <h2 id='proj-title'>{props.proj}</h2>
                 <h3 id='proj-desc'>{props.desc}</h3>

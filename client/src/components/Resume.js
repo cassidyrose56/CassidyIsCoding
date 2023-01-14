@@ -14,6 +14,7 @@ const Resume = () => {
         {
             pic: lightQL,
             proj: 'LightQL',
+            linkTo: 'https://www.lightql.com/',
             desc: 'A client-side caching tool for GraphQL',
             info: ['Designed and published an NPM package to cache GraphQL queries using in-memory caching to reduce page load times, employing Local Forage and IndexedDB to accomplish persistence between sessions by using asynchronous storage',
                 'Created a custom LRU eviction policy that self sorts based on recent queries and maintains the user\'s designated capacity,implementing a doubly linked list and a hash map, allowing for constant time complexity during lookup, insertion, and deletion',
@@ -27,8 +28,9 @@ const Resume = () => {
         {
             pic: internHouse,
             proj: 'Intern.House',
-            desc: 'Intern shared housing company based in Austin',
-            info: ['Produced application with React to display reusable components, providing responsive rendering of the user interface,       reducing repeated code blocks, and increasing scalability with React\'s innate modularization and use of the virtual DOM',
+            linkTo: 'https://www.intern.house/',
+            desc: 'Intern shared housing startup based in Austin',
+            info: ['Produced application with React to display reusable components, providing responsive rendering of the user interface, reducing repeated code blocks, and increasing scalability with React\'s innate modularization and use of the virtual DOM',
                 'Designed wireframes in Figma for all UI components to remove the guesswork from frontend development process, ensure stylistic consistency throughout the site, and to cooperate with product manager on UI design',
                'Optimized Webpack configuration for code splitting, minification, and uglification to significantly reduce total server requests and improve performance of the application to provide a faster and seamless experience to the end user',
                 'Implemented SCSS to increase styling consistency with variables and ease of iteration, delivering a compelling and consistent UI',
@@ -37,6 +39,7 @@ const Resume = () => {
         {
             pic: kvasir,
             proj: 'Kvasir',
+            linkTo: 'none',
             desc: 'Chat platform to practice secondary languages with native speakers',
             info: ['Utilized React and Redux Toolkit to simplify state management across multiple functional components that allow the user to customize and update both their username and password and their preferences for languages, interests, and friends',
                 'Employed Node and Express Middleware design pattern to keep backend code modular and organized despite housing a myriad of complex SQL queries to update and save user preferences and friend connections',
@@ -45,6 +48,7 @@ const Resume = () => {
         {
             pic: carryOn,
             proj: 'CarryOn',
+            linkTo: 'none',
             desc: 'A tool to make detailed packing lists based on  location and weather',
             info: ['Constructed a Node.js/Express server to create a RESTful API with modularized middleware and async database connection that allow for user authentication, communication between frontend and NoSQL database, and interaction with OpenWeather API',
             'Used React to create functional components to cut down on page reloads and improve data management across the application',
@@ -53,7 +57,7 @@ const Resume = () => {
     ]
 
     const resumeComps = info.map((obj) =>
-        <ResumeComp key={obj.proj} pic={obj.pic} proj={obj.proj} desc={obj.desc} info={obj.info} />
+        <ResumeComp key={obj.proj} link={obj.linkTo} pic={obj.pic} proj={obj.proj} desc={obj.desc} info={obj.info} />
     );
 
     return (

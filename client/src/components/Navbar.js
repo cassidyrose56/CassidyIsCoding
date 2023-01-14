@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import '../styles/home.scss';
+import '../styles/navbar.scss';
 import { motion } from 'framer-motion';
 import { Link, animateScroll as scroll } from "react-scroll";
 
@@ -29,7 +29,7 @@ const Navbar = () => {
                         </Link>
                         <Link
                             activeClass="active"
-                            to="resume-title"
+                            to="resume-layout"
                             spy={true}
                             smooth={true}
                             duration={500}
@@ -59,16 +59,6 @@ const Navbar = () => {
                                 Contact
                             </motion.p>
                         </Link>
-                        {/* <motion.a
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }} 
-                            whileInView={{ opacity: 1 }}  
-                        >Resume</motion.a>
-                        <motion.a
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }} 
-                            whileInView={{ opacity: 1 }}  
-                        >Contact</motion.a> */}
                     </nav>
                 </header>
         </div>

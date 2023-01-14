@@ -1,39 +1,10 @@
 @import './variables.scss';
 
-#navbar-layout {
-    background-color: $pink;
-    height: 12vh;
-}
-
 #home-body {
-    height: 88vh;
+    height: 85vh;
     background-color: $pink;
     display: flex;
     align-items: center;
-}
-
-#navbar {
-    grid-row: 1 / 2;
-    display: grid;
-    grid-template-columns: 30% auto 36%;
-    align-items: end;
-    margin-left: 92px;
-    margin-right: 8%;
-}
-
-#navbar-text {
-    grid-column: 1 / 2;
-    margin: 0;
-    height: 60%
-}
-
-#nav-links {
-    grid-column: 3 / 4;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.3rem;
-    margin-bottom: 1%;
-    cursor: pointer;
 }
 
 .p-text {
@@ -52,7 +23,6 @@
     grid-column: 1 / 2;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
 }
 
 .title-text {
@@ -73,7 +43,7 @@
 
 #hello {
     margin: 0;
-    font-size: 6rem;
+    font-size: 6.5rem;
     color: rgba($white, .9);
     letter-spacing: 0.3rem;
     // margin-top: 14%;
@@ -94,7 +64,7 @@
 
 
 #headshot {
-    height: 56vh;
+    height: 60vh;
     width: auto;
     border-radius: 50%;
     margin-right: 15%;

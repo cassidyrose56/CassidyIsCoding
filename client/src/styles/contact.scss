@@ -33,7 +33,9 @@
 #social-media-text {
     font-family: $body-text;
     color: white;
+    font-size: 2rem;
     margin: 0;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -47,16 +49,18 @@
 
 #sm-link-section {
     display: flex;
-    width: 15vw;
+    width: 20vw;
     justify-content: space-around;
 }
 
 .sm-link {
     color: white;
+    padding: 10px;
+    font-size: 1.5rem;
     background-color: $green;
-    border-radius: 20px;
+    border-radius: 40px;
     text-decoration: none;
-    width: 40%;
+    width: 35%;
     text-align: center;
     font-weight: 400;
     font-family: $body-text;

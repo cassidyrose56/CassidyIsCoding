@@ -63,6 +63,9 @@ const PersonalInfo = () => {
                 <h2 id='work-info'>
                     I'm passionate about creating inspiring and human-centric applications. 
                 </h2>
+                <h3 id='work-details'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec massa sapien faucibus et. Integer malesuada nunc vel risus commodo. <br /> <br /> Elementum integer enim neque volutpat ac tincidunt vitae semper quis. Sit amet nisl purus in mollis. Pretium vulputate sapien nec sagittis aliquam malesuada. Tristique et egestas quis ipsum.
+                </h3>
             </section>
             <section id='info-right'>
                 <h2 id='project-title' className='titles'>Projects</h2>
@@ -71,25 +74,26 @@ const PersonalInfo = () => {
                     visibleSlides={1}
                     totalSlides={2}
                     step={1}
-                    naturalSlideWidth={300}
-                    naturalSlideHeight={500}  
-                    isIntrinsicHeight  
+                    naturalSlideWidth={100}
+                    naturalSlideHeight={80}  
+                    dragEnabled={false}
                     infinite
-                    hasMasterSpinner
                 >
-                    <div style={{position:'relative'}}>
-                        <Slider>
+                    <div  style={{position:'relative'}}>
+                        <Slider id='sliders'>
                             <Slide index={0}>
-                                <Image src={lightQL} style={{height:'200px', width:'auto', borderRadius: '50%'}} />
+                                <Image src={lightQL} className='carousel-image' style={{height:'300px', width:'auto'}} />
                             </Slide>
                             <Slide index={1}>
-                                <Image src={internHouse} style={{height:'200px', width:'auto', borderRadius: '50%'}} />
+                                <Image src={internHouse} className='carousel-image' style={{height:'300px', width:'auto'}} />
+                                
                             </Slide>
                         </Slider>
-                        <ButtonBack onClick={handlePrevious} className='slider-btns' style={{left: 0}}>Back</ButtonBack>
-                        <ButtonNext onClick={handleNext} className='slider-btns' style={{right: 0}}>Next</ButtonNext> 
+                        <ButtonBack onClick={handlePrevious} className='slider-btns' style={{left: 0}}><i class="bi bi-caret-left-fill" style={{fontSize: '2.5rem'}}></i></ButtonBack>
+                        <ButtonNext onClick={handleNext} className='slider-btns' style={{right: 0}}><i class="bi bi-caret-right-fill" style={{fontSize: '2.5rem'}}></i></ButtonNext> 
+                        <a id='proj-name' href={link} target="_blank">Check it out here!</a> 
                     </div>
-                   <a id='proj-name' href={link} target="_blank">{projName}</a> 
+                   
                 </CarouselProvider>
                 
             </section>
@@ -100,7 +104,7 @@ const PersonalInfo = () => {
                 <section id='techs'>
                     <section id='frontend' className='tech-sections'>
                         <h3 className='tech-section-titles'>
-                            on frontend applications... 
+                            on the frontend... 
                         </h3>
                         <section id='frontend-icons' className='icon-sections'>
                             <motion.img
@@ -128,7 +132,7 @@ const PersonalInfo = () => {
                     </section>
                     <section id='backend' className='tech-sections'>
                         <h3 className='tech-section-titles'>
-                            backend applications...
+                            the backend...
                         </h3>
                         <section id='backend-icons' className='icon-sections'>
                             <motion.img

@@ -16,7 +16,6 @@ const App = () => {
     return (
         <div>
             <Navbar />
-            
             <Home 
                 title="Home"
                 subtitle={dummyText}
