@@ -68,7 +68,7 @@ const PersonalInfo = () => {
                 </h3>
             </section>
             <section id='info-right'>
-                <h2 id='project-title' className='titles'>Projects</h2>
+                <h2 id='project-title' className='titles'>Recent Projects</h2>
                 <CarouselProvider
                     id='carousel'
                     visibleSlides={1}

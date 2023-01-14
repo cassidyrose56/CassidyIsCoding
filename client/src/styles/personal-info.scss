@@ -22,7 +22,7 @@
     justify-content: center;
     align-items: center;
     margin: 0;
-    margin-top: 4%;
+    margin-top: 2%;
     font-family: $title-text;
     color: $white;
     font-size: 4rem;
@@ -33,7 +33,7 @@
 #info-left {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
-    margin: 5% 15%;
+    margin: 3% 15%;
     margin-right: 0;
 }
 
@@ -58,7 +58,7 @@
 #info-right {
     grid-column: 2 / 3;
     grid-row: 2 / 3; 
-    margin-top: 10%;
+    margin-top: 6%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,12 +112,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    margin-top: 1rem;
+    // justify-content: space-evenly;
 }
 
 #techs {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.titles {
+    font-weight: 500;
+    font-size: 1.8rem;
 }
 
 .tech-sections {
