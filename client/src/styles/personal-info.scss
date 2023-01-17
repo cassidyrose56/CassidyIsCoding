@@ -5,7 +5,7 @@
     background-color: $green;
     display: grid;
     grid-template-columns: 55vw 45vw;
-    grid-template-rows: 15vh 57vh 28vh;
+    grid-template-rows: 15vh 53vh 24vh;
 }
 
 .titles {
@@ -43,16 +43,19 @@
     font-size: 2rem;
     letter-spacing: 0.1rem;
     font-weight: 500;
-    text-align: justify;
 }
 
 #work-details {
     color: $white;
     font-family: $body-text;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     letter-spacing: 0.05rem;
     font-weight: 400;
-    text-align: justify;
+}
+
+#talk-link {
+    font-weight: 600;
+    color: lighten($orange, 25)
 }
 
 #info-right {
@@ -112,7 +115,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 2%;
     // justify-content: space-evenly;
 }
 
@@ -136,6 +139,7 @@
     padding-top: 0;
     background-color: rgba($white, 0.25);
     width: 27vw;
+    height: 90%;
     margin: 0 5px 0 5px;
     border-radius: 20px;
 }

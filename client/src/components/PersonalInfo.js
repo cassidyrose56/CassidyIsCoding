@@ -64,7 +64,7 @@ const PersonalInfo = () => {
                     I'm passionate about creating inspiring and human-centric applications. 
                 </h2>
                 <h3 id='work-details'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec massa sapien faucibus et. Integer malesuada nunc vel risus commodo. <br /> <br /> Elementum integer enim neque volutpat ac tincidunt vitae semper quis. Sit amet nisl purus in mollis. Pretium vulputate sapien nec sagittis aliquam malesuada. Tristique et egestas quis ipsum.
+                    I love designing and building responsive, accessible web apps that can be used by anyone, anywhere. You can check out a talk I gave on web accessibility <a id='talk-link' href='https://www.linkedin.com/feed/update/urn:li:activity:7008487028233310208/' target="_blank">here</a>! <br /> <br /> I have strong experience with Javascript, creating multiple full-stack websites with React.js, Node.js, Express, and both PostgreSQL and MongoDB databases. 
                 </h3>
             </section>
             <section id='info-right'>
