@@ -25,6 +25,7 @@
     margin-top: 2%;
     font-family: $title-text;
     color: $white;
+    text-shadow: 4px 3px 0px rgba($black, 0.3);
     font-size: 4rem;
     letter-spacing: 0.15rem;
     
@@ -55,7 +56,7 @@
 
 #talk-link {
     font-weight: 600;
-    color: lighten($orange, 25)
+    color: $white;
 }
 
 #info-right {
@@ -174,7 +175,9 @@
     }
 
     #info-title {
-        font-size: 1.6rem;
+        font-size: 2rem;
+        margin: 4.5vh 0;
+        text-shadow: 2px 2px 0px rgba($black, 0.3);
     }
     
     #work-info {
@@ -231,6 +234,7 @@
         padding: 10px;
         padding-top: 0;
         width: 80vw;
+        max-width: 350px;
         height: fit-content;
         margin: 5px 5px 20px 5px;
     }
@@ -241,12 +245,12 @@
     }
 }
 
-@media screen and (max-width: 1300px) and (min-width: 850px) {
+@media screen and (max-width: 1350px) and (min-width: 850px) {
     #work-info {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
     
     #work-details {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }

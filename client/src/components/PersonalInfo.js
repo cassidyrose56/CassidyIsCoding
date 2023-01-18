@@ -3,7 +3,7 @@ import '../styles/personal-info.scss';
 import { motion } from 'framer-motion';
 import { useMediaQuery } from 'react-responsive';
 import { ButtonBack, ButtonNext,
-    CarouselProvider, DotGroup, Image, Slide, Slider, } from 'pure-react-carousel';
+    CarouselProvider, Image, Slide, Slider, } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 const html = require('../../../assets/techStack/html.png');
@@ -32,8 +32,9 @@ const PersonalInfo = () => {
     const [link, setLink] = useState('lightql.com');
     const length = 2;
 
-    const isDesktopOrTablet = useMediaQuery({ query: '(min-width: 660px)' });
-    const isMobile = useMediaQuery({ query: '(max-width: 659px)' });
+    const isDesktopOrTablet = useMediaQuery({ query: '(min-width: 850px)' });
+    const isTablet = useMediaQuery({ query: '(min-width: 850px)' });
+    const isMobile = useMediaQuery({ query: '(max-width: 849px)' });
 
     const handlePrevious = () => {
         const newIndex = index - 1;
@@ -75,7 +76,7 @@ const PersonalInfo = () => {
                     I'm passionate about creating inspiring and human-centric applications. 
                 </h2>
                 <h3 id='work-details'>
-                    I love designing and building responsive, accessible web apps that can be used by anyone, anywhere. You can check out a talk I gave on web accessibility <a id='talk-link' href='https://www.linkedin.com/feed/update/urn:li:activity:7008487028233310208/' target="_blank">here</a>! <br /> <br /> I have strong experience with Javascript, creating multiple full-stack websites with React.js, Node.js, Express, and both PostgreSQL and MongoDB databases. 
+                    I love designing and building responsive, accessible web apps that can be used by anyone, anywhere. <a id='talk-link' href='https://www.linkedin.com/feed/update/urn:li:activity:7008487028233310208/' target="_blank">You can check out a talk I gave on web accessibility here!</a> <br /> <br /> I have strong experience with Javascript, creating multiple full-stack websites with React.js, Node.js, Express, and both PostgreSQL and MongoDB databases. 
                 </h3>
             </section>
             <section id='info-right'>
@@ -86,6 +87,8 @@ const PersonalInfo = () => {
                         visibleSlides={1}
                         totalSlides={2}
                         step={1}
+                        isPlaying={true}
+                        hasMasterSpinner
                         naturalSlideWidth={100}
                         naturalSlideHeight={80}  
                         dragEnabled={false}

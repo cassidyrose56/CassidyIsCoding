@@ -9,9 +9,14 @@
     background-color: $blue;
 }
 
+ul {
+    padding: 0;
+}
+
 #resume-title {
     font-family: $title-text;
     color: $white;
+    text-shadow: 4px 3px 0px rgba($black, 0.3);
     font-size: 3.5rem;
     letter-spacing: 0.15rem;
 }
@@ -71,6 +76,7 @@
     font-size: 1rem;
     font-style: italic;
     margin-top: 0;
+    text-align: center;
 }
 
 #info-list {
@@ -81,3 +87,24 @@
     line-height: 1.5r0em;
 }
 
+@media screen and (max-width: 849px) {
+    #resume-title {
+        font-size: 1.8rem;
+    }
+    
+    #resume {
+        width: 80%;
+        height: fit-content;
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 850px) {
+    #work-info {
+        font-size: 1.5rem;
+    }
+    
+    #work-details {
+        font-size: 1rem;
+    }
+}

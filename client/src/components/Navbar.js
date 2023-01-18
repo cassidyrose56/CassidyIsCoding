@@ -1,15 +1,21 @@
 import React, {useState} from 'react';
 import '../styles/navbar.scss';
 import { motion } from 'framer-motion';
+import { useMediaQuery } from 'react-responsive';
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const name = require('../../../assets/name.png');
 
+
+
 const Navbar = () => {
+
+    const isDesktopOrLaptop = useMediaQuery({ minWidth: 1224 })
+
     return (
         <div id='navbar-layout'>
             <header id='navbar' className='body-text'>
-                    <img id='navbar-text' src={name}></img>
+                    <img id='navbar-text' alt='' src={name}></img>
                     <nav id='nav-links' className='text'>
                         <Link
                             activeClass="active"

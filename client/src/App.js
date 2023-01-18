@@ -15,7 +15,7 @@ const dummyText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
 const App = () => {
     return (
         <div>
-            <Navbar />
+            {/* <Navbar /> */}
             <Home 
                 title="Home"
                 subtitle={dummyText}
