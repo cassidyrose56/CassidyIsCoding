@@ -16,26 +16,6 @@ const Home = () => {
     return (
         <div>
             <section id='home-body'>
-                {/* <header id='navbar' className='body-text'>
-                    <img id='navbar-text' src={name}></img>
-                    <nav id='nav-links' className='text'>
-                        <motion.a
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }} 
-                            whileInView={{ opacity: 1 }}
-                        >Personal Info</motion.a>
-                        <motion.a
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }} 
-                            whileInView={{ opacity: 1 }}  
-                        >Resume</motion.a>
-                        <motion.a
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }} 
-                            whileInView={{ opacity: 1 }}  
-                        >Contact</motion.a>
-                    </nav>
-                </header> */}
                 <section id='hero'>
                     <section id='home-left'>
                         <motion.div 
@@ -56,10 +36,20 @@ const Home = () => {
                     </section>
                     <section id='home-right'>
                             <motion.img
-                                whileInView={{ opacity: 1 }}
-                                // animate={{ x: 100 }}
-                                transition={{ ease: "easeOut", duration: 1  }}
-                                whileHover={{ scale: 1.05}} 
+                                initial={{ opacity: 0, scale: 0.5 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{
+                                  default: {
+                                    duration: 0.3,
+                                    ease: [0, 0.71, 0.2, 1.00]
+                                  },
+                                  scale: {
+                                    type: "spring",
+                                    damping: 8,
+                                    stiffness: 60,
+                                    restDelta: 0.001
+                                  }
+                                }}
                                 id='headshot' 
                                 src={bigSmile} 
                                 alt='Cassidy headshot'>

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import '../styles/personal-info.scss';
 import { motion } from 'framer-motion';
+import { useMediaQuery } from 'react-responsive';
 import { ButtonBack, ButtonNext,
     CarouselProvider, DotGroup, Image, Slide, Slider, } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
@@ -31,6 +32,9 @@ const PersonalInfo = () => {
     const [link, setLink] = useState('lightql.com');
     const length = 2;
 
+    const isDesktopOrTablet = useMediaQuery({ query: '(min-width: 660px)' });
+    const isMobile = useMediaQuery({ query: '(max-width: 659px)' });
+
     const handlePrevious = () => {
         const newIndex = index - 1;
         if (newIndex === 1) {
@@ -58,7 +62,14 @@ const PersonalInfo = () => {
 
     return (
         <div id='info-body'>
-            <h1 id='info-title'>It's great to meet you!</h1>
+            <motion.h1 
+                id='info-title'
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+            >
+                It's great to meet you!
+            </motion.h1>
             <section id='info-left'>
                 <h2 id='work-info'>
                     I'm passionate about creating inspiring and human-centric applications. 
@@ -69,33 +80,64 @@ const PersonalInfo = () => {
             </section>
             <section id='info-right'>
                 <h2 id='project-title' className='titles'>Recent Projects</h2>
-                <CarouselProvider
+                { isDesktopOrTablet &&
+                    <CarouselProvider
+                        id='carousel'
+                        visibleSlides={1}
+                        totalSlides={2}
+                        step={1}
+                        naturalSlideWidth={100}
+                        naturalSlideHeight={80}  
+                        dragEnabled={false}
+                        infinite
+                    >
+                        <div  style={{position:'relative'}}>
+                            <Slider id='sliders'>
+                                <Slide index={0}>
+                                    <Image src={lightQL} className='carousel-image' style={{height:'250px', width:'auto'}} />
+                                </Slide>
+                                <Slide index={1}>
+                                    <Image src={internHouse} className='carousel-image' style={{height:'250px', width:'auto'}} />
+                                    
+                                </Slide>
+                            </Slider>
+                            <ButtonBack onClick={handlePrevious} className='slider-btns' style={{left: 0}}><i class="bi bi-caret-left-fill" style={{fontSize: '2.5rem'}}></i></ButtonBack>
+                            <ButtonNext onClick={handleNext} className='slider-btns' style={{right: 0}}><i class="bi bi-caret-right-fill" style={{fontSize: '2.5rem'}}></i></ButtonNext> 
+                            <a id='proj-name' href={link} target="_blank">Check it out here!</a> 
+                        </div>
+                    
+                    </CarouselProvider>
+                }
+                
+                {isMobile && 
+                    <CarouselProvider
                     id='carousel'
                     visibleSlides={1}
                     totalSlides={2}
                     step={1}
-                    naturalSlideWidth={100}
-                    naturalSlideHeight={80}  
+                    naturalSlideWidth={80}
+                    naturalSlideHeight={100}  
                     dragEnabled={false}
                     infinite
                 >
                     <div  style={{position:'relative'}}>
                         <Slider id='sliders'>
                             <Slide index={0}>
-                                <Image src={lightQL} className='carousel-image' style={{height:'300px', width:'auto'}} />
+                                <Image src={lightQL} className='carousel-image' style={{height:'150px', width:'auto'}} />
                             </Slide>
                             <Slide index={1}>
-                                <Image src={internHouse} className='carousel-image' style={{height:'300px', width:'auto'}} />
+                                <Image src={internHouse} className='carousel-image' style={{height:'150px', width:'auto'}} />
                                 
                             </Slide>
                         </Slider>
-                        <ButtonBack onClick={handlePrevious} className='slider-btns' style={{left: 0}}><i class="bi bi-caret-left-fill" style={{fontSize: '2.5rem'}}></i></ButtonBack>
-                        <ButtonNext onClick={handleNext} className='slider-btns' style={{right: 0}}><i class="bi bi-caret-right-fill" style={{fontSize: '2.5rem'}}></i></ButtonNext> 
+                        <ButtonBack onClick={handlePrevious} className='slider-btns' style={{left: -40}}><i class="bi bi-caret-left-fill" style={{fontSize: '2.5rem'}}></i></ButtonBack>
+                        <ButtonNext onClick={handleNext} className='slider-btns' style={{right: -40}}><i class="bi bi-caret-right-fill" style={{fontSize: '2.5rem'}}></i></ButtonNext> 
                         <a id='proj-name' href={link} target="_blank">Check it out here!</a> 
                     </div>
                    
                 </CarouselProvider>
-                
+                }
+
             </section>
             <section id='info-bottom'>
                 <h2 id='tech-title' className='titles'>
