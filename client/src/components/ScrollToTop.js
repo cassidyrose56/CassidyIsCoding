@@ -25,7 +25,7 @@ const ScrollButton = () =>{
         >
             <Link
                 activeClass="active"
-                to="navbar-layout"
+                to="home-body"
                 spy={true}
                 smooth={true}
                 duration={500}

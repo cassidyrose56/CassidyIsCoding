@@ -15,8 +15,8 @@ const bigSmile = require('../../../assets/bigSmile.jpg');
 
 const Home = () => {
 
-    const isDesktop = useMediaQuery({ query: '(min-width: 661px), { deviceWidth: 1600 }' });
-    const isMobile = useMediaQuery({ query: '(max-width: 660px)' });
+    const isDesktop = useMediaQuery({ query: '(min-width: 850px), { deviceWidth: 1600 }' });
+    const isMobile = useMediaQuery({ query: '(max-width: 850px)' });
 
     return (
         <div>
