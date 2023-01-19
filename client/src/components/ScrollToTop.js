@@ -26,6 +26,7 @@ const ScrollButton = () =>{
             <Link
                 activeClass="active"
                 to="home-body"
+                offset={-300}
                 spy={true}
                 smooth={true}
                 duration={500}
