@@ -6,7 +6,7 @@ const Path = (props) => (
     <motion.path
         fill="transparent"
         strokeLinecap="round"
-        strokeWidth="3"
+        strokeWidth="2"
         {...props}
     />
 );
@@ -37,7 +37,7 @@ const MenuToggle = ({ isOpen, toggle }) => {
                     initial={false}
                     variants={{
                         closed: { d: "M 2 2.5 L 20 2.5", stroke: "#FCFAFA" },
-                        open: { d: "M 3 16.5 L 17 2.5", stroke: "#FCFAFA" },
+                        open: { d: "M 3 16.5 L 17 2.5", stroke: "#FE480B" },
                     }}
                     transition={transition}
                 />
@@ -57,7 +57,7 @@ const MenuToggle = ({ isOpen, toggle }) => {
                     initial={false}
                     variants={{
                         closed: { d: "M 2 16.346 L 20 16.346", stroke: "#FCFAFA" },
-                        open: { d: "M 3 2.5 L 17 16.346", stroke: "#FCFAFA" },
+                        open: { d: "M 3 2.5 L 17 16.346", stroke: "#FE480B" },
                     }}
                     transition={transition}
 

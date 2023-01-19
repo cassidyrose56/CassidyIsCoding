@@ -4,14 +4,24 @@ import MenuToggle from './MenuToggle';
 import MenuContent from './MenuContent';
 import '../../styles/navbar.scss';
 
-const menuVariants = {
-    open: {
-        transform: "translateX(3%)",
-    },
+const sidebar = {
+    open: (height = 1000) => ({
+      clipPath: `circle(${height * 2 + 200}px at 87% 50px)`,
+      transition: {
+        type: "spring",
+        stiffness: 20,
+        restDelta: 2
+      }
+    }),
     closed: {
-        transform: "translateX(100%)",
-    },
-};
+      clipPath: "circle(0px at 87% 50px)",
+      transition: {
+        type: "spring",
+        stiffness: 400,
+        damping: 40
+      }
+    }
+  };
 
 const menuTransition = {
     type: "spring",
@@ -46,9 +56,10 @@ const HamburgerMenu = () => {
             <motion.nav id='menu-container'
                 initial={false}
                 animate={isOpen ? "open" : "closed"}
-                variants={menuVariants}
+                variants={sidebar}
                 transition={menuTransition}
             >
+                
                 <MenuContent isOpen={isOpen} />
             </motion.nav>
         </div>

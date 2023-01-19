@@ -10,14 +10,7 @@ const Navbar = () => {
 
     return (
         <div id='navbar'>
-            <nav id='nav'>
-                    {/* <img
-                        src={name}
-                        alt='Cassidy Johnson'
-                        id='nav-logo'>
-                    </img> */}
-                    <HamburgerMenu />
-                </nav>
+            <HamburgerMenu />
         </div>
     )
 }

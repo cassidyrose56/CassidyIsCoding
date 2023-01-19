@@ -10,15 +10,24 @@ const variants = {
       y: 0,
       opacity: 1,
       transition: {
-        y: { stiffness: 1000, velocity: -100 }
+        y: { stiffness: 1000, velocity: 100 }
       }
     },
     closed: {
-      y: 50,
+      y: -50,
       opacity: 0,
       transition: {
-        y: { stiffness: 1000 }
+        y: { stiffness: 1000, velocity: -100 }
       }
+    }
+  };
+
+  const menuVariants = {
+    open: {
+      transition: { staggerChildren: 0.07, delayChildren: 0.2 }
+    },
+    closed: {
+      transition: { staggerChildren: 0.05, staggerDirection: -1 }
     }
   };
 
@@ -27,15 +36,15 @@ const MenuContent = ({ isOpen }) => {
 
     return (
         <nav id='nav-menu-layout' aria-label='tabpanel'>
-            <ul id='nav-list' aria-label='navigation tablist'>
+            <motion.ul id='nav-list' aria-label='navigation tablist' variants={menuVariants}>
             <motion.li  
                     initial={false}
-                    animate={isOpen ? "show" : "hide"}
                     variants={variants}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                     className="nav-link"
                     aria-label='link'   
+                    
                 >
                     <Link
                         tabIndex={0}
@@ -49,12 +58,11 @@ const MenuContent = ({ isOpen }) => {
                         smooth={true}
                         duration={500}
                     >
-                        <img id='menu-name' src={name}></img>
+                        <img id='menu-name' style={{textAlign: 'center'}} src={name}></img>
                     </Link>
                 </motion.li>
                 <motion.li  
                     initial={false}
-                    animate={isOpen ? "show" : "hide"}
                     variants={variants}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
@@ -77,7 +85,6 @@ const MenuContent = ({ isOpen }) => {
                 </motion.li>
                 <motion.li
                     initial={false}
-                    animate={isOpen ? "show" : "hide"}
                     variants={variants}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
@@ -98,7 +105,6 @@ const MenuContent = ({ isOpen }) => {
                 </motion.li>
                 <motion.li
                     initial={false}
-                    animate={isOpen ? "show" : "hide"}
                     variants={variants}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
@@ -117,7 +123,7 @@ const MenuContent = ({ isOpen }) => {
                         Contact
                     </Link>
                 </motion.li>
-            </ul>
+            </motion.ul>
         </nav>
     )
 };
