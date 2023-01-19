@@ -126,15 +126,15 @@ const PersonalInfo = () => {
                     <div  style={{position:'relative'}}>
                         <Slider id='sliders'>
                             <Slide index={0}>
-                                <Image src={lightQL} className='carousel-image' style={{height:'150px', width:'auto'}} />
+                                <Image src={lightQL} className='carousel-image' style={{height:'140px', width:'auto'}} />
                             </Slide>
                             <Slide index={1}>
-                                <Image src={internHouse} className='carousel-image' style={{height:'150px', width:'auto'}} />
+                                <Image src={internHouse} className='carousel-image' style={{height:'140px', width:'auto'}} />
                                 
                             </Slide>
                         </Slider>
-                        <ButtonBack onClick={handlePrevious} className='slider-btns' style={{left: -40}}><i class="bi bi-caret-left-fill" style={{fontSize: '2.5rem'}}></i></ButtonBack>
-                        <ButtonNext onClick={handleNext} className='slider-btns' style={{right: -40}}><i class="bi bi-caret-right-fill" style={{fontSize: '2.5rem'}}></i></ButtonNext> 
+                        <ButtonBack onClick={handlePrevious} className='slider-btns' style={{left: -50}}><i class="bi bi-caret-left-fill" style={{fontSize: '2.5rem'}}></i></ButtonBack>
+                        <ButtonNext onClick={handleNext} className='slider-btns' style={{right: -50}}><i class="bi bi-caret-right-fill" style={{fontSize: '2.5rem'}}></i></ButtonNext> 
                         <a id='proj-name' href={link} target="_blank">Check it out here!</a> 
                     </div>
                    
