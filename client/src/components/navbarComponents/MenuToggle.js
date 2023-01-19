@@ -1,12 +1,13 @@
 import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
+import { useMediaQuery } from 'react-responsive';
 import '../../styles/navbar.scss'
 
 const Path = (props) => (
     <motion.path
         fill="transparent"
         strokeLinecap="round"
-        strokeWidth="2"
+        strokeWidth="2.5"
         {...props}
     />
 );
@@ -14,6 +15,9 @@ const Path = (props) => (
 const transition = { duration: 0.3 };
 
 const MenuToggle = ({ isOpen, toggle }) => {
+
+    const isDesktop = useMediaQuery({ query: '(min-width: 850px), { deviceWidth: 1600 }' });
+    const isMobile = useMediaQuery({ query: '(max-width: 850px)' });
 
     const outsideClick = (ref) => {
         useEffect(() => {
@@ -31,38 +35,75 @@ const MenuToggle = ({ isOpen, toggle }) => {
 
     return (
         <button id='menu-btn' aria-label='menu' aria-expanded={isOpen} aria-controls='menu-container' onClick={toggle}>
-            <svg id='menu-svg' width="40" height="40" viewBox="0 0 23 23" >
-                <Path
-                    animate={isOpen ? "open" : "closed"}
-                    initial={false}
-                    variants={{
-                        closed: { d: "M 2 2.5 L 20 2.5", stroke: "#FCFAFA" },
-                        open: { d: "M 3 16.5 L 17 2.5", stroke: "#FE480B" },
-                    }}
-                    transition={transition}
-                />
-                <Path
-                    d="M 2 9.423 L 20 9.423"
-                    stroke="#FCFAFA"
-                    animate={isOpen ? "open" : "closed"}
-                    initial={false}
-                    variants={{
-                        closed: { opacity: 1 },
-                        open: { opacity: 0 },
-                    }}
-                    transition={transition}
-                />
-                <Path
-                    animate={isOpen ? "open" : "closed"}
-                    initial={false}
-                    variants={{
-                        closed: { d: "M 2 16.346 L 20 16.346", stroke: "#FCFAFA" },
-                        open: { d: "M 3 2.5 L 17 16.346", stroke: "#FE480B" },
-                    }}
-                    transition={transition}
+            {isDesktop &&
+                <svg id='menu-svg' width="40" height="40" viewBox="0 0 23 23" >
+                    <Path
+                        animate={isOpen ? "open" : "closed"}
+                        initial={false}
+                        variants={{
+                            closed: { d: "M 2 2.5 L 20 2.5", stroke: "#FCFAFA" },
+                            open: { d: "M 3 16.5 L 17 2.5", stroke: "#FE480B" },
+                        }}
+                        transition={transition}
+                    />
+                    <Path
+                        d="M 2 9.423 L 20 9.423"
+                        stroke="#FCFAFA"
+                        animate={isOpen ? "open" : "closed"}
+                        initial={false}
+                        variants={{
+                            closed: { opacity: 1 },
+                            open: { opacity: 0 },
+                        }}
+                        transition={transition}
+                    />
+                    <Path
+                        animate={isOpen ? "open" : "closed"}
+                        initial={false}
+                        variants={{
+                            closed: { d: "M 2 16.346 L 20 16.346", stroke: "#FCFAFA" },
+                            open: { d: "M 3 2.5 L 17 16.346", stroke: "#FE480B" },
+                        }}
+                        transition={transition}
 
-                />
-            </svg>
+                    />
+                </svg>
+            }
+            {isMobile &&
+                <svg id='menu-svg' width="30" height="30" viewBox="0 0 23 23" >
+                    <Path
+                        animate={isOpen ? "open" : "closed"}
+                        initial={false}
+                        variants={{
+                            closed: { d: "M 2 2.5 L 20 2.5", stroke: "#FCFAFA" },
+                            open: { d: "M 3 16.5 L 17 2.5", stroke: "#FE480B" },
+                        }}
+                        transition={transition}
+                    />
+                    <Path
+                        d="M 2 9.423 L 20 9.423"
+                        stroke="#FCFAFA"
+                        animate={isOpen ? "open" : "closed"}
+                        initial={false}
+                        variants={{
+                            closed: { opacity: 1 },
+                            open: { opacity: 0 },
+                        }}
+                        transition={transition}
+                    />
+                    <Path
+                        animate={isOpen ? "open" : "closed"}
+                        initial={false}
+                        variants={{
+                            closed: { d: "M 2 16.346 L 20 16.346", stroke: "#FCFAFA" },
+                            open: { d: "M 3 2.5 L 17 16.346", stroke: "#FE480B" },
+                        }}
+                        transition={transition}
+
+                    />
+                </svg>
+            }
+
         </button>
     )
 };
