@@ -52,10 +52,23 @@ ul {
     width: 60px;
     background-color: lighten($blue, 60);
     border-radius: 12px;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;}
+    box-shadow:
+        -5px -5px 20px 0px lighten($blue, 62),
+        -2px -2px 5px 0px lighten($blue, 64),
+        7px 7px 20px 0px rgba($black, 0.3),
+        4px 4px 5px 0px rgba($black, 0.2),
+        inset 0px 0px 0px 0px lighten($blue, 62),
+        inset 0px 0px 0px 0px rgba($black, 0.3),
+        inset 0px 0px 0px 0px lighten($blue, 62),        
+        inset 0px 0px 0px 0px rgba($black, 0.2);
+}
 
-#img-box:hover {
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+#img-box:active {
+    box-shadow:
+        4px 4px 6px 0 rgba(255,255,255,.5),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255,255,255,.5),
+        inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
 }
 
 #resume-pics {
@@ -90,6 +103,11 @@ ul {
 }
 
 @media screen and (max-width: 849px) {
+    #resume-layout {
+        padding: 3% 0;
+        height: fit-content;
+    }
+
     #resume-title {
         font-size: 1.8rem;
         text-align: center;
