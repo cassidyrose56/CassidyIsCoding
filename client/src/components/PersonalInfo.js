@@ -33,7 +33,6 @@ const PersonalInfo = () => {
     const length = 2;
 
     const isDesktopOrTablet = useMediaQuery({ query: '(min-width: 850px)' });
-    const isTablet = useMediaQuery({ query: '(min-width: 850px)' });
     const isMobile = useMediaQuery({ query: '(max-width: 849px)' });
 
     const handlePrevious = () => {
@@ -96,10 +95,10 @@ const PersonalInfo = () => {
                         <div  style={{position:'relative'}}>
                             <Slider id='sliders'>
                                 <Slide index={0}>
-                                    <Image src={lightQL} className='carousel-image' style={{height:'275px', width:'auto'}} />
+                                    <Image src={lightQL} className='carousel-image' style={{height:'265px', width:'auto'}} />
                                 </Slide>
                                 <Slide index={1}>
-                                    <Image src={internHouse} className='carousel-image' style={{height:'275px', width:'auto'}} />
+                                    <Image src={internHouse} className='carousel-image' style={{height:'265px', width:'auto'}} />
                                     
                                 </Slide>
                             </Slider>
