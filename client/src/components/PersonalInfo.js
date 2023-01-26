@@ -29,7 +29,7 @@ const PersonalInfo = () => {
 
     const [index, setIndex] = useState(0); 
     const [projName, setProjName] = useState('LightQL');
-    const [link, setLink] = useState('lightql.com');
+    const [link, setLink] = useState('https://www.lightql.com/');
     const length = 2;
 
     const isDesktopOrTablet = useMediaQuery({ query: '(min-width: 850px)' });
@@ -87,7 +87,6 @@ const PersonalInfo = () => {
                         visibleSlides={1}
                         totalSlides={2}
                         step={1}
-                        isPlaying={true}
                         hasMasterSpinner
                         naturalSlideWidth={100}
                         naturalSlideHeight={80}  
@@ -97,10 +96,10 @@ const PersonalInfo = () => {
                         <div  style={{position:'relative'}}>
                             <Slider id='sliders'>
                                 <Slide index={0}>
-                                    <Image src={lightQL} className='carousel-image' style={{height:'250px', width:'auto'}} />
+                                    <Image src={lightQL} className='carousel-image' style={{height:'275px', width:'auto'}} />
                                 </Slide>
                                 <Slide index={1}>
-                                    <Image src={internHouse} className='carousel-image' style={{height:'250px', width:'auto'}} />
+                                    <Image src={internHouse} className='carousel-image' style={{height:'275px', width:'auto'}} />
                                     
                                 </Slide>
                             </Slider>
