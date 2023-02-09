@@ -6,8 +6,8 @@ import '../../styles/navbar.scss'
 const Path = (props) => (
     <motion.path
         fill="transparent"
-        strokeLinecap="round"
-        strokeWidth="2.5"
+        // strokeLinecap="round"
+        strokeWidth="1.8"
         {...props}
     />
 );
@@ -36,19 +36,19 @@ const MenuToggle = ({ isOpen, toggle }) => {
     return (
         <button id='menu-btn' aria-label='menu' aria-expanded={isOpen} aria-controls='menu-container' onClick={toggle}>
             {isDesktop &&
-                <svg id='menu-svg' width="40" height="40" viewBox="0 0 23 23" >
+                <svg id='menu-svg' width="40" height="40" viewBox="0 0 25 25" >
                     <Path
                         animate={isOpen ? "open" : "closed"}
                         initial={false}
                         variants={{
-                            closed: { d: "M 2 2.5 L 20 2.5", stroke: "#FCFAFA" },
-                            open: { d: "M 3 16.5 L 17 2.5", stroke: "#FE480B" },
+                            closed: { d: "M 2 2.5 L 25 2.5", stroke: "#F26157" },
+                            open: { d: "M 3 16.5 L 17 2.5", stroke: "#944BBB" },
                         }}
                         transition={transition}
                     />
                     <Path
-                        d="M 2 9.423 L 20 9.423"
-                        stroke="#FCFAFA"
+                        d="M 2 9.423 L 25 9.423"
+                        stroke="#F26157"
                         animate={isOpen ? "open" : "closed"}
                         initial={false}
                         variants={{
@@ -61,8 +61,8 @@ const MenuToggle = ({ isOpen, toggle }) => {
                         animate={isOpen ? "open" : "closed"}
                         initial={false}
                         variants={{
-                            closed: { d: "M 2 16.346 L 20 16.346", stroke: "#FCFAFA" },
-                            open: { d: "M 3 2.5 L 17 16.346", stroke: "#FE480B" },
+                            closed: { d: "M 2 16.346 L 25 16.346", stroke: "#F26157" },
+                            open: { d: "M 3 2.5 L 17 16.346", stroke: "#944BBB" },
                         }}
                         transition={transition}
 
@@ -75,8 +75,8 @@ const MenuToggle = ({ isOpen, toggle }) => {
                         animate={isOpen ? "open" : "closed"}
                         initial={false}
                         variants={{
-                            closed: { d: "M 2 2.5 L 20 2.5", stroke: "#FCFAFA" },
-                            open: { d: "M 3 16.5 L 17 2.5", stroke: "#FE480B" },
+                            closed: { d: "M 2 2.5 L 25 2.5", stroke: "#FCFAFA" },
+                            open: { d: "M 3 16.5 L 17 2.5", stroke: "#944BBB" },
                         }}
                         transition={transition}
                     />
