@@ -4,8 +4,6 @@ import { motion } from 'framer-motion';
 import { useMediaQuery } from 'react-responsive';
 import HamburgerMenu from './navbarComponents/HamburgerMenu'
 
-const name = require('../../../assets/name.png');
-
 const Navbar = () => {
 
     return (

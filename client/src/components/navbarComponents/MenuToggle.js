@@ -75,14 +75,14 @@ const MenuToggle = ({ isOpen, toggle }) => {
                         animate={isOpen ? "open" : "closed"}
                         initial={false}
                         variants={{
-                            closed: { d: "M 2 2.5 L 25 2.5", stroke: "#FCFAFA" },
-                            open: { d: "M 3 16.5 L 17 2.5", stroke: "#944BBB" },
+                            closed: { d: "M 2 2.5 L 20 2.5", stroke: "#944BBB" },
+                            open: { d: "M 3 16.5 L 17 2.5", stroke: "#F26157" },
                         }}
                         transition={transition}
                     />
                     <Path
                         d="M 2 9.423 L 20 9.423"
-                        stroke="#FCFAFA"
+                        stroke="#944BBB"
                         animate={isOpen ? "open" : "closed"}
                         initial={false}
                         variants={{
@@ -95,8 +95,8 @@ const MenuToggle = ({ isOpen, toggle }) => {
                         animate={isOpen ? "open" : "closed"}
                         initial={false}
                         variants={{
-                            closed: { d: "M 2 16.346 L 20 16.346", stroke: "#FCFAFA" },
-                            open: { d: "M 3 2.5 L 17 16.346", stroke: "#FE480B" },
+                            closed: { d: "M 2 16.346 L 20 16.346", stroke: "#944BBB" },
+                            open: { d: "M 3 2.5 L 17 16.346", stroke: "#F26157" },
                         }}
                         transition={transition}
 

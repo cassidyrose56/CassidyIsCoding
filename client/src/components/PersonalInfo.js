@@ -103,8 +103,8 @@ const PersonalInfo = () => {
                                     
                                 </Slide>
                             </Slider>
-                            <ButtonBack onClick={handlePrevious} className='slider-btns' style={{left: 0}}><i class="bi bi-caret-left-fill" style={{fontSize: '2.5rem'}}></i></ButtonBack>
-                            <ButtonNext onClick={handleNext} className='slider-btns' style={{right: 0}}><i class="bi bi-caret-right-fill" style={{fontSize: '2.5rem'}}></i></ButtonNext> 
+                            <ButtonBack onClick={handlePrevious} className='slider-btns' style={{left: 0}}><i className="bi bi-caret-left-fill" style={{fontSize: '2.5rem'}}></i></ButtonBack>
+                            <ButtonNext onClick={handleNext} className='slider-btns' style={{right: 0}}><i className="bi bi-caret-right-fill" style={{fontSize: '2.5rem'}}></i></ButtonNext> 
                             {/* <motion.a whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }} 
                             whileInView={{ opacity: 1 }} id='proj-name' href={link} target="_blank">Check it out here!</motion.a>  */}

@@ -58,7 +58,7 @@ const MenuContent = ({ isOpen }) => {
                         smooth={true}
                         duration={500}
                     >
-                        <img id='menu-name' style={{textAlign: 'center'}} src={name}></img>
+                        <img id='menu-name' alt='Logo scroll to top' style={{textAlign: 'center'}} src={name}></img>
                     </Link>
                 </motion.li>
                 <motion.li  
