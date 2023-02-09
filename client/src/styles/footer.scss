@@ -1,25 +1,11 @@
 @import './variables.scss';
 
-@keyframes backgroundColorPalette {
-    0% {
-      background: $pink;
-    }
-    50% {
-      background: $green;
-    }
-    100% {
-      background: $pink;
-    }
-  }
-
   #footer-layout {
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    animation-name: backgroundColorPalette;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
+    background-color: $purple;
     font-family: $title-text;
     text-shadow: 2px 2px 0px rgba($black, 0.3);
     color: $white;

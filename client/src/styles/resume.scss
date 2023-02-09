@@ -7,7 +7,7 @@
     gap: 5%;
     min-height: 50vh;
     height: fit-content;
-    background-color: $blue;
+    background-color: $white;
     padding: 0 0 5% 0;
 }
 
@@ -16,17 +16,16 @@ ul {
 }
 
 #resume {
-    width: 60%;
+    width: 50%;
     height: fit-content;
-    background-color: lighten($blue, 52);
+    background-color: rgba($purple, 0.1);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     border-radius: 12px;
 }
 
 #resume-title {
     font-family: $title-text;
-    color: $white;
-    text-shadow: 4px 3px 0px rgba($black, 0.3);
+    color: $black;
     font-size: 3.5rem;
     margin: 2% 0;
     letter-spacing: 0.15rem;
@@ -47,28 +46,11 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all ease-in-out .1s;
     height: 60px;
     width: 60px;
-    background-color: lighten($blue, 58);
+    background-color: lighten($purple, 47);
     border-radius: 12px;
-    box-shadow:
-        -5px -5px 20px 0px lighten($blue, 62),
-        -2px -2px 5px 0px lighten($blue, 64),
-        7px 7px 20px 0px rgba($black, 0.3),
-        4px 4px 5px 0px rgba($black, 0.2),
-        inset 0px 0px 0px 0px lighten($blue, 62),
-        inset 0px 0px 0px 0px rgba($black, 0.3),
-        inset 0px 0px 0px 0px lighten($blue, 62),        
-        inset 0px 0px 0px 0px rgba($black, 0.2);
-}
-
-#img-box:active {
-    box-shadow:
-        4px 4px 6px 0 rgba(255,255,255,.5),
-        -4px -4px 6px 0 rgba(116, 125, 136, .2),
-        inset -4px -4px 6px 0 rgba(255,255,255,.5),
-        inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    box-shadow: 4px 4px 0px rgba($black, 0.4);
 }
 
 #resume-pics {
