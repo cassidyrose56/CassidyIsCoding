@@ -72,13 +72,13 @@ const PersonalInfo = () => {
             </motion.h1>
             <section id='info-left'>
                 <h2 id='work-info'>
-                    I'm passionate about creating inspiring and human-centric applications. 
+                    I'm passionate about creating inspiring, human-centric applications. 
                 </h2>
                 <h3 id='work-details'>
-                    I love designing and building responsive, accessible web apps that can be used by anyone, anywhere. <a id='talk-link' href='https://www.linkedin.com/feed/update/urn:li:activity:7008487028233310208/' target="_blank">You can check out a talk I gave on web accessibility here!</a> <br /> <br /> I have strong experience with Javascript, creating multiple full-stack websites with React.js, Node.js, Express, and both PostgreSQL and MongoDB databases. 
+                    I love to design and build responsive, accessible web apps with great user experiences. <a id='talk-link' href='https://www.linkedin.com/feed/update/urn:li:activity:7008487028233310208/' target="_blank">You can check out a talk I gave on web accessibility here!</a> <br /> <br /> I have strong experience with Javascript, creating multiple full-stack websites with React.js, Node.js, Express, and both PostgreSQL and MongoDB databases. 
                 </h3>
             </section>
-            <section id='info-right'>
+            {/* <section id='info-right'>
                 <h2 id='project-title' className='titles'>Recent Projects</h2>
                 { isDesktopOrTablet &&
                     <CarouselProvider
@@ -108,7 +108,7 @@ const PersonalInfo = () => {
                             {/* <motion.a whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }} 
                             whileInView={{ opacity: 1 }} id='proj-name' href={link} target="_blank">Check it out here!</motion.a>  */}
-                        </div>
+                        {/* </div>
                     
                     </CarouselProvider>
                 }
@@ -137,17 +137,17 @@ const PersonalInfo = () => {
                         <ButtonBack onClick={handlePrevious} className='slider-btns' style={{left: -50}}><i class="bi bi-caret-left-fill" style={{fontSize: '2.5rem'}}></i></ButtonBack>
                         <ButtonNext onClick={handleNext} className='slider-btns' style={{right: -50}}><i class="bi bi-caret-right-fill" style={{fontSize: '2.5rem'}}></i></ButtonNext> 
                         {/* <a id='proj-name' href={link} target="_blank">Check it out here!</a>  */}
-                    </div>
+                    {/* </div> */}
                    
-                </CarouselProvider>
+                {/* </CarouselProvider> */}
                 
-                }
-                <motion.a whileHover={{ scale: 1.1 }}
+                {/* // } */}
+                {/* <motion.a whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }} 
                             whileInView={{ opacity: 1 }} id='proj-name' href={link} target="_blank">Check it out here!</motion.a> 
 
-            </section>
-            <section id='info-bottom'>
+            </section> */}
+            <section id='info-right'>
                 <h2 id='tech-title' className='titles'>
                     Technologies I Use
                 </h2>
@@ -161,23 +161,28 @@ const PersonalInfo = () => {
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.9 }} 
                                 whileInView={{ opacity: 1 }} 
-                                src={html} id='html' className='icon' title='HTML' alt='HTML'></motion.img>
+                                src={html} id='html' className='icon' title='HTML' alt='HTML'>
+                            </motion.img>
                             <motion.img
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.9 }} 
-                                whileInView={{ opacity: 1 }}  src={css} id='css' className='icon' title='CSS' alt='CSS'></motion.img>
+                                whileInView={{ opacity: 1 }}  src={css} id='css' className='icon' title='CSS' alt='CSS'>
+                            </motion.img>
                             <motion.img
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.9 }} 
-                                whileInView={{ opacity: 1 }}  src={sass} id='sass' className='icon' title='Sass' alt='Sass'></motion.img>
+                                whileInView={{ opacity: 1 }}  src={react} id='react' className='icon' title='React' alt='React'>
+                            </motion.img>
                             <motion.img
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.9 }} 
-                                whileInView={{ opacity: 1 }}  src={react} id='react' className='icon' title='React' alt='React'></motion.img>
+                                whileInView={{ opacity: 1 }}  src={sass} id='sass' className='icon' title='Sass' alt='Sass'>
+                            </motion.img>
                             <motion.img
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.9 }} 
-                                whileInView={{ opacity: 1 }}  src={reactRouter} id='react-router' className='icon' title='React Router' alt='React Router'></motion.img>
+                                whileInView={{ opacity: 1 }}  src={reactRouter} id='react-router' className='icon' title='React Router' alt='React Router'>
+                            </motion.img>
                         </section>
                     </section>
                     <section id='backend' className='tech-sections'>

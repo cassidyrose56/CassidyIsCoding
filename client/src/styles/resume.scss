@@ -81,7 +81,58 @@ ul {
     text-align: justify;
     margin-right: 10%;
     font-size: 0.9rem;
-    line-height: 1.5r0em;
+    line-height: 1.5rem;
+}
+
+#carousel-layout {
+    margin-top: 1%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#carousel {
+    width: 65%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.slider-btns {
+    position: absolute; 
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    transform: translateY(-50%);
+    top: 50%;
+    color: $purple;
+    border: none;
+    border-radius: 50%;
+    display: block;
+}
+
+.carousel-image {
+    border-radius: 40px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#proj-name {
+    font-family: $body-text;
+    background-color: $purple;
+    color: $white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    border-radius: 8px;
+    padding: 5px 10px;
+    box-shadow: 5px 5px 0px rgba($black, 0.4);
 }
 
 @media screen and (max-width: 849px) {
