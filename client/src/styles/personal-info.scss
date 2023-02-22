@@ -186,7 +186,7 @@
     }
 
     #info-left {
-        margin: 0 10%;
+        margin: 0 6%;
         align-items: center;
     }
 
@@ -215,28 +215,6 @@
 
     #info-right {
         margin: 6% 0;
-    }
-
-    #carousel {
-        width: 85%;
-        text-align: center;
-        border-radius: 20px;
-    }
-
-    .slider-btns {
-        position: absolute; 
-        display: flex;
-        justify-content: center;
-        background-color: transparent;
-        transform: translateY(-65%);
-        top: 50%;
-        display: block;
-    }
-
-    #proj-name {
-        font-size: 0.8rem;
-        padding: 3px 8px;
-        margin-bottom: 20px;
     }
 
     #techs {
@@ -275,7 +253,7 @@
     }
     
     #work-details {
-        font-size: 2rem;
+        font-size: 1.2rem;
         line-height: 2rem;
     }
 }

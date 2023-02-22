@@ -99,7 +99,7 @@ const Resume = () => {
 
     return (
         <div id='resume-layout'>
-            <h1 id='resume-title'>See what I've been working on...</h1>
+            <h1 id='resume-title'>What I've been working on...</h1>
             <section id='resume'>
                 <ul>
                     {resumeComps}
