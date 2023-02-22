@@ -187,6 +187,7 @@
 
     #info-left {
         margin: 0 10%;
+        align-items: center;
     }
 
     #info-title {
@@ -198,11 +199,13 @@
     #work-info {
         font-size: 1.2rem;
         text-align: center;
+        line-height: 2rem;
     }
     
     #work-details {
         font-size: 1rem;
         text-align: center;
+        line-height: 2rem;
     }
     
     .titles {
@@ -261,11 +264,18 @@
 }
 
 @media screen and (max-width: 1350px) and (min-width: 850px) {
+    #info-left {
+        align-items: center;
+    }
+
     #work-info {
         font-size: 1.6rem;
+        line-height: 2rem;
+        
     }
     
     #work-details {
-        font-size: 1.2rem;
+        font-size: 2rem;
+        line-height: 2rem;
     }
 }

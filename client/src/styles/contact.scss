@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    padding: 2% 0;
+    padding: 2vh 0 5vh 0;
 }
 
 #contact-title {
@@ -110,8 +110,4 @@
         width: fit-content;
         margin-bottom: 10%;
     }
-}
-
-@media screen and (max-width: 1350px) and (min-width: 850px) {
-
 }
